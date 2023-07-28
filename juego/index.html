@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Fania musica - Juego</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../estilos.css">
+	  <script src="juego.js"></script>
+	</head>
+
+<body>
+<header>
+	<!-- nav -->
+	<nav class="navbar navbar-expand-lg navbar-dark ">
+		<div class="container-fluid" id="containernav">
+		  <a class="navbar-brand" href="../index.html">
+			  <img src="img/logo.jpg" alt="logo">  
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="../musica/index.html">Musica</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="../historia/index.html">Historia</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="../musicos/index.html">Musicos</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="../contacto/index.html">Contacto</a>
+			  </li>
+			   <li class="nav-item">
+				<a class="nav-link" href="juego.html">Juego</a>
+			  </li> 
+			  <li class="nav-item">
+				<a class="nav-link" href="../desarrollador/index.html">Desarrollador</a>
+			  </li> 
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+</header>
+
+<main>
+	<div id="containerinicio">
+		<div>
+		<h3>Instrucciones</h3>
+		<hr>
+   <h5>Demostra cuanto sabes de los integrantes de la Fania.</h5>
+		<p>Se plantea una imagen de un personaje conocido de la fania all stars. El jugador debe adivinar de quien se trata seleccionando una de las tres opciones que se muestran. 
+			 Por cada respuesta que se responda bien sin ayuda de una pista se sumaran dos puntos. Si se utiliza una pista solo se sumará un punto. El maximo de puntos es 20.</p>
+	<button class="btn btn-dark" id="inicio" onclick="Iniciar() ">INICIAR</button>
+	</div>
+	</div>
+	<div id="containerjuego" class="row">
+		<div>
+		<h2>¿Quien es?</h2>
+		</div>
+		<div>
+		<h5 id="npregunta">x</h5>
+		</div>
+		<img src="celiacruz.jpg" class="img-fluid" id="imagenMusico" alt="imagenMusico">
+		<div class="gap-2" id="botones">
+		<button class="btn btn-dark" id="rta1" onclick='rta1()'>1</button>
+		<button class="btn btn-dark" id="rta2" onclick="rta2()">2</button>
+		<button class="btn btn-dark" id="rta3" onclick="rta3()">3</button>
+		</div>
+		<div>
+		<button class="btn btn-secondary" id="pistas" onclick="pista()">pista</button>
+		</div>
+	</div>
+	<div id="containerfin">
+		<div>
+			<h2>Juego terminado!</h2>
+		<hr>
+		<h5 id="resultado">x</h5>
+		<button id="reiniciar" class="btn btn-dark" onclick="reinicio()">Volver al inicio</button>
+	    </div>
+	</div>
+</main>
+<!--footer-->
+<footer>
+    <div id="footer" class="container-fluid">
+        <div>
+          <a href="https://www.facebook.com/FaniaAllStatr" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/faniarecords/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/user/Faniavideos" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="https://open.spotify.com/artist/1OdyhpUABf8avaZ9r8nI1u?si=G-gJhAm5TMu0BS8_U0jhsw" target="_blank">
+            <i class="fa-brands fa-spotify"></i>
+          </a>
+          <a href="mailto:serravallenina@gmail.com" target="_blank">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+        </div>
+        <div class="col-xs-12" id="copyright">
+          <p>Copiright - All rights reserved © 2023</p>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/7a1ff619c1.js" crossorigin="anonymous"></script>
+	<script src="juego.js"></script>
+  </body>
+  </html>

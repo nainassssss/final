@@ -1,0 +1,289 @@
+html{
+	height: 100%;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+/* nav  */
+nav div a img{
+	width: 80px;
+	margin: 10px;
+	margin-left: 0;
+}
+#containernav {
+	background-color: #171717;
+}
+.navbar{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.navbar-brand{
+	margin: 0;
+	padding: 0;
+}
+
+/* footer */
+
+footer{
+	padding: 10.5px;
+	color: white;
+	background-color: #171717;
+	text-align: center;
+	margin-top: auto;
+}
+footer p{
+	margin: 0;
+	height: 15px;
+}
+a:link { 
+	color: white;
+	text-decoration:none; 
+} 
+a:visited {
+	color: white;
+    text-decoration:none; 
+}
+#copyright{
+	font-size: 60%;
+}
+
+/* main */
+#contmain{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: calc(100vh - 160px);
+}
+#imagenmain{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+}
+#textoInicio{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#textomain{
+	background-color: grey;
+	padding: 20px;
+}
+
+/*musicos galeria de imagenes*/
+#galeria .col-lg-4{
+	padding: 1em 2em 0em 2em;
+	text-align: center;
+}
+#galeria img{
+	width: 100%;
+}
+#galeria img:hover{
+	transform: scale(1.1);
+	transform-origin: center;
+}
+#galeria h4{
+	padding-top: 8px;
+	padding-bottom: 13px;
+}
+
+
+/*musicos secundarias*/
+#contenedormusicospart{
+	display: flex;
+	flex-wrap: wrap;
+	min-height: calc(100vh - 160px);
+}
+#contenedormusicospart img{
+	width: 100%;
+	padding:1em;
+}
+#contenedormusicospart h3{
+padding:1em;
+}
+#contenedormusicospart section{
+	padding: 2em;
+}
+.iconosalbumes{
+	text-align: center;
+}
+
+/*musica*/
+/*carousel*/
+.contenedortitulo{
+	margin-top: 1em;
+}
+.contenedor{
+	margin: auto;
+	width: 90%;
+	align-items: center;
+}
+.albumes .contenedorprincipal{
+display: flex;
+align-items: center;
+position: relative;
+margin-bottom: 2em;
+}
+.albumes .contenedorprincipal .flechaizquierda,
+.albumes .contenedorprincipal .flechaderecha{
+	position: absolute;
+	border: none;
+	background: rgba(0, 0, 0, 0.3) ;
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	z-index: 500;
+	transition: .2s ease all;
+}
+.albumes .contenedorprincipal .flechaizquierda{
+	left: 0;
+}
+.albumes .contenedorprincipal .flechaderecha{
+	right: 0;
+}
+.albumes .contenedorprincipal .flechaizquierda:hover ,
+.albumes .contenedorprincipal .flechaderecha:hover {
+background: rgba(0, 0, 0, .9);
+}
+.albumes .contenedorcarousel{
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+.albumes .contenedorcarousel .carousel{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.albumes .contenedorcarousel .carousel .album{
+	min-width: 50%;
+	margin-top: 0;
+	margin: 0em;
+	text-align: center;
+}
+.albumes .contenedorcarousel .carousel .album img{
+	max-width: 100%;
+}
+.albumes .contenedorcarousel .carousel .album img:hover{
+transform: scale(1.2);
+transform-origin: center;
+}
+
+/*media queries*/
+@media screen and (max-width: 800px){
+	.albumes .contenedorcarousel{
+		overflow: visible;
+	}
+	.albumes .contenedorcarousel .carousel{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 30px;
+	}
+	.albumes .flechaderecha,
+	.albumes .flechaizquierda{
+		display: none;
+	}
+}
+/*historia*/
+#contenedorhistoria{
+	display: flex;
+	flex-wrap: wrap;
+}
+#contenedorhistoria aside{
+padding: 1em;
+}
+aside{
+	background-color: #1D1D1D;
+	color: white;
+}
+#conttextohistoria{
+	padding: 2em;
+}
+#conttextohistoria img{
+	max-width: 100%;
+}
+
+
+/*desarrollador*/
+#contenedorpicninita{
+	display: flex;
+	flex-wrap: wrap;
+}
+#contenedorpicninita img{
+width: 94%;
+margin: 10px;
+margin-top: 2em;
+margin-bottom: 2em;
+}
+#contenedortxtninita{
+	padding: 3em;
+}
+
+/*contacto*/
+.contacto-contenedor{
+
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	background-image: url('img/foto1.jpg');
+}
+#containercontacto{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	background-color: #1D1D1D;
+	color: #fff;
+	padding: 20px;
+}
+
+/*juego*/
+#containerfin{
+	justify-content: center;
+	align-items: center; 
+	background-image: url('img/foto1.jpg');
+    display: none;
+	height: 550px;
+}
+#containerfin div{
+	padding: 5em;
+	margin: 5em;
+	background-color: #fff;
+	color: #171717;
+}
+#containerjuego{
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+    display: none;
+	margin: 1em;
+}
+#containerjuego div{
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+#containerjuego img{
+	max-width:600px;
+}
+#containerinicio{
+		display: flex;
+		min-height: calc(100vh - 160px);
+		justify-content: center;
+		align-items: center; 
+		background-image: url('img/foto1.jpg');
+}
+#containerinicio div{
+	max-width: 1200px;
+	padding: 5em;
+	margin: 5em;
+	background-color: #fff;
+	color: #171717;
+}
+#botones{
+	margin: 1em;
+}
+
